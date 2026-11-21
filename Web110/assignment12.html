@@ -12,7 +12,6 @@
 document.getElementById("assignment_header").innerHTML = "<h2>Assignment 12</h2>";
 </script>
 
-
 <p id="clock"></p>
 <script>
 const d = new Date();
@@ -20,18 +19,27 @@ document.getElementById("clock").innerHTML = d;
 </script>
 
 <canvas id="myCanvas" width="500" height="300" style="border: 1px solid black;"></canvas>
-
 <script>
   const canvas = document.getElementById("myCanvas");
   const ctx = canvas.getContext("2d");
-
-  ctx.font = "24px Arial";
-  ctx.fillStyle = "white";
-   ctx.fillText("Joseph Weirich", 20, 40);
+ctx.font = "24px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("Joseph Weirich", 20, 40);
 </script>
 
-  
-  
+<canvas id="myCanvas" width="500" height="400" style="border: 1px solid black;"></canvas>
+
+<script>
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");  
+  ctx.beginPath();
+    
+  ctx.arc(150, 180, 60, 0, Math.PI * 2);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(280, 120, 120, 120);
   
   
 <p>JavaScript (JS) is a high level programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content engineering. It is used to make webpages interactive and provide online programs, including video games. All modern Web browsers support JavaScript with built-in interpreters. I used a JavaScript Date object for the current date and time. I also used Javascript for the heading of my assignment. So far, I don’t really see how Javascript is different from html and other programming languages. I like how interactive JS can be and I would like to learn more about different elements I can add into my site.</p>
